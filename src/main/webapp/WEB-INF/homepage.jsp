@@ -20,13 +20,11 @@
 
 </head>
 <body>
-	<h1>Toma Todo!!!</h1>
 	<div class="phone">
+	<img src="/img/logo_tomaTodo.png" class="tomaTodoLogo">
 		<button onclick="spinTop()">Click To Spin!</button>
 		<p id="result"></p>
-		<c:if test="document.getElementById('result') == 0">
-			<p>todos ponen</p>
-		</c:if>
+		<p id="topImg"></p>
 	</div>
 </body>
 </html>
