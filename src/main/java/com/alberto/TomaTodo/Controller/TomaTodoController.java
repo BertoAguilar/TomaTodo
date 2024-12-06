@@ -17,7 +17,7 @@ public class TomaTodoController {
 	
 	@GetMapping("/TomaTodo")
 	public String homepage() {
-		return "homepage.jsp";
+		return "index.jsp";
 	}
 
 }
