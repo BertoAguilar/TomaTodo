@@ -12,10 +12,10 @@ public class TomaTodoController {
 	
 	@GetMapping("/")
 	public String redirectHome() {
-		return "redirect:/homepage";
+		return "redirect:/TomaTodo";
 	}
 	
-	@GetMapping("/homepage")
+	@GetMapping("/TomaTodo")
 	public String homepage() {
 		return "homepage.jsp";
 	}
