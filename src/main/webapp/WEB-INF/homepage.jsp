@@ -23,8 +23,8 @@
 	<div class="phone">
 	<img src="/img/logo_tomaTodo.png" class="tomaTodoLogo">
 		<button onclick="spinTop()">Click To Spin!</button>
-		<p id="result"></p>
-		<p id="topImg"></p>
+		<div id="topImg"></div>
+		<div id="playAgain"></div>
 	</div>
 </body>
 </html>

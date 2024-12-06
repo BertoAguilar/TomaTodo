@@ -1,20 +1,25 @@
-const image = document.createElement('img'); 
+const image = document.createElement('img');
+const playAgain = document.createElement('a');
 
 function spinTop() {
   faceNum = Math.floor(Math.random() * 6);
-  console.log(faceNum);
   if (faceNum == 0){
 	image.src = "/img/pon_uno.jpg"; 
 	image.alt = "Pon Uno Img";
 	image.className = "topImg";
 	var inputImg = document.getElementById("topImg");
 	inputImg.appendChild(image);
-	return document.getElementById("result").innerHTML = "Pon Uno";
+	return;
   }
   
   
   if (faceNum == 1){
-  return document.getElementById("result").innerHTML = "Toma Uno";
+	image.src = "/img/toma_uno.jpg"; 
+	image.alt = "Toma Uno Img";
+	image.className = "topImg";
+	var inputImg = document.getElementById("topImg");
+	inputImg.appendChild(image);
+  return;
   } 
   
   
@@ -24,7 +29,7 @@ function spinTop() {
 	image.className = "topImg"
 	var inputImg = document.getElementById("topImg");
 	inputImg.appendChild(image);
-  	return document.getElementById("result").innerHTML = "Pon Dos";
+  	return;
   } 
   
   
@@ -34,7 +39,7 @@ function spinTop() {
 	image.className = "topImg"
 	var inputImg = document.getElementById("topImg");
 	inputImg.appendChild(image);
-  	return document.getElementById("result").innerHTML = "Toma Dos";
+  	return;
   } 
   
   
@@ -44,7 +49,7 @@ function spinTop() {
 	image.className = "topImg"
 	var inputImg = document.getElementById("topImg");
 	inputImg.appendChild(image);
-	return document.getElementById("result").innerHTML = "Todos Ponen";
+	return;
 	} 
   
   
@@ -54,6 +59,11 @@ function spinTop() {
 	image.className = "topImg";
 	var inputImg = document.getElementById("topImg");
 	inputImg.appendChild(image);
-  	return document.getElementById("result").innerHTML = "Toma Todo";
+	playAgain.href = "/";
+	playAgain.innerHTML = "<img src='/img/playAgain.png' class='playAgainBtn'>";
+	var inputPlay = document.getElementById("playAgain");
+	inputPlay.appendChild(playAgain);
+  	return;
   } 
+  
 }
